@@ -2,13 +2,13 @@
 #include <chrono>
 #include <string>
 #include <fstream>
+#include <cmath>
+#define NITEMS 3600
 #include "ChimpN.cpp"
 #include "ChimpNDecompressor.cpp"
 #include "CSVReader.cpp"
 using namespace std::chrono;
 using namespace std;
-
-#define NITEMS 3600
 
 // static int MINIMUM_TOTAL_BLOCKS = 50000;
 #define MINIMUM_TOTAL_BLOCKS 1

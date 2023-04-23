@@ -83,7 +83,7 @@
 
 struct InputBitStream
 { 
-    int NITEMS = 3600;
+    // int NITEMS = 3600;
 
     bool DEBUG = false;
     /** The default size of the byte buffer in bytes (8Ki). */

@@ -7,7 +7,7 @@
  */
 struct ChimpNDecompressor
 {
-    const int NITEMS = 3600;
+    // const int NITEMS = 3600;
     int storedLeadingZeros = INT_MAX;
     int storedTrailingZeros = 0;
     uint64_t storedVal = 0;

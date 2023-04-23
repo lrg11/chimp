@@ -11,7 +11,7 @@
  */
 struct ChimpN
 {
-    const int NITEMS = 3600;
+    // const int NITEMS = 3600;
     const uint64_t NAN_LONG = 0x7ff8000000000000L;
     int storedLeadingZeros = INT_MAX;
     uint64_t *storedValues;
