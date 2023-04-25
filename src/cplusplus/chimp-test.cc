@@ -15,8 +15,8 @@ using namespace std;
 
 static string FILENAMES[] = {
     "city_temperature.csv",
-    // "Stocks-Germany-sample.txt",
-    // "SSD_HDD_benchmarks.csv"
+    "Stocks-Germany-sample.txt",
+    "SSD_HDD_benchmarks.csv"
 };
 
 void testChimp128()
@@ -57,13 +57,13 @@ void testChimp128()
             totalBlocks += 1;
             for (int i = 0; i < values.size(); i++)
             {
-                cout << values[i] << " ";
+                // cout << values[i] << " ";
                 // cout << uncompressedValues[i];
                 // if (values[i] != uncompressedValues[i])
                 //     cout << "Value did not match" << endl;
             }
-            cout << endl;
-            cout << endl;
+            // cout << endl;
+            // cout << endl;
             ChimpNDecompressor d(compressor.getOut(), 128);
             uint8_t *bf = compressor.getOut();
 
@@ -87,8 +87,8 @@ void testChimp128()
             int diffvalue = 0;
             for (int i = 0; i < values.size(); i++)
             {
-                cout << values[i] << " ";
-                cout << uncompressedValues[i] << endl;
+                // cout << values[i] << " ";
+                // cout << uncompressedValues[i] << endl;
                 if (values[i] != uncompressedValues[i])
                 {
                     diffvalue++;
